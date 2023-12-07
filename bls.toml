@@ -1,0 +1,16 @@
+name = "hello-worlolf"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "hello-worlolf_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "hello-worlolf.wasm"
+command = "npm run build:release"
